@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <!-- 🔹 Metadatos del documento -->
+  <meta charset="utf-8"> <!-- Codificación de caracteres -->
+  <meta name="viewport" content="width=device-width,initial-scale=1"> <!-- Adaptación a pantallas móviles -->
+  <title>Registro - Feria de Viajes</title> <!-- Título que se muestra en la pestaña del navegador -->
+
+  <!-- 🔹 Enlace a la hoja de estilos CSS común a todo el sitio -->
+  <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+
+<body>
+  <!-- ================= CABECERA ================= -->
+  <header class="cabecera">
+    <!-- Logotipo principal -->
+    <img src="imagenes/logo_feria.jpg" alt="Logotipo Feria de Viajes" class="logo-small">
+    <!-- Título de la página -->
+    <h1>Registro de asistentes</h1>
+  </header>
+
+  <!-- ================= MENÚ DE NAVEGACIÓN ================= -->
+  <nav class="menu">
+    <!-- Lista con enlaces a todas las secciones del sitio -->
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="programa.html">Programa</a></li>
+      <li><a href="expositores.html">Expositores</a></li>
+      <li><a href="registro.html">Registro</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- ================= CONTENIDO PRINCIPAL ================= -->
+  <main class="contenido">
+    <!-- Sección del formulario -->
+    <section>
+      <h2>Formulario de inscripción</h2>
+
+      <!-- FORMULARIO -->
+      <!-- El atributo action usa "mailto:" para abrir el cliente de correo del usuario -->
+      <form action="mailto:tuemail@dominio.com" method="post" enctype="text/plain" class="form-registro">
+
+        <!-- Campo de texto: nombre completo -->
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="Nombre" required>
+
+        <!-- Campo de texto: correo electrónico -->
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="Correo" required>
+
+        <!-- Lista desplegable: tipo de entrada -->
+        <label for="tipo">Tipo de entrada</label>
+        <select id="tipo" name="Tipo de entrada">
+          <option>General</option>
+          <option>Estudiante</option>
+          <option>Profesional</option>
+        </select>
+
+        <!-- Conjunto de opciones múltiples -->
+        <fieldset>
+          <legend>Intereses</legend>
+          <!-- Cada checkbox representa una categoría -->
+          <label><input type="checkbox" name="interes" value="cultura"> Turismo cultural</label>
+          <label><input type="checkbox" name="interes" value="aventura"> Turismo de aventura</label>
+          <label><input type="checkbox" name="interes" value="playa"> Sol y playa</label>
+        </fieldset>
+
+        <!-- Campo de texto de varias líneas para comentarios -->
+        <label for="comentarios">Comentarios</label>
+        <textarea id="comentarios" name="Comentarios" rows="4" cols="240" placeholder="Comentarios"></textarea>
+
+        <!-- Botones de envío y reseteo -->
+        <div class="botones">
+          <button type="submit">Enviar inscripción</button>
+          <button type="reset
