@@ -33,7 +33,7 @@ body {
 
 /* Logotipo en versión pequeña (usado en páginas interiores) */
 .logo-small {
-  max-width: 100px;                    /* Anchura máxima */
+  max-width:auto;                    /* Anchura máxima */
   height: auto;                        /* Mantiene la proporción */
   vertical-align: left;                /* Alinea respecto al texto */
 }
