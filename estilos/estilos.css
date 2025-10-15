@@ -33,7 +33,7 @@ body {
 
 /* Logotipo en versión pequeña (usado en páginas interiores) */
 .logo-small {
-  max-width:auto;                    /* Anchura máxima */
+  max-width:auto;                    /* Se ajusta automáticamente */
   height: auto;                        /* Mantiene la proporción */
   vertical-align: left;                /* Alinea respecto al texto */
 }
@@ -78,7 +78,7 @@ body {
 
 /* Imagen del banner de inicio */
 .banner {
-  width: 100%;                         /* Ocupa todo el ancho disponible */
+  width: auto;                         /* Se ajusta automáticamente */
   height: auto;                        /* Mantiene la proporción original */
   border-radius: 6px;                  /* Esquinas redondeadas */
 }
