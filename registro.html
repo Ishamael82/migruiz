@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <!-- 🔹 Metadatos del documento -->
-  <meta charset="utf-8"> <!-- Codificación de caracteres -->
-  <meta name="viewport" content="width=device-width,initial-scale=1"> <!-- Adaptación a pantallas móviles -->
-  <title>Registro - Feria de Viajes</title> <!-- Título que se muestra en la pestaña del navegador -->
+  <!-- ?? Metadatos del documento -->
+  <meta charset="utf-8"> <!-- Codificacion de caracteres -->
+  <meta name="viewport" content="width=device-width,initial-scale=1"> <!-- Adaptacion a pantallas moviles -->
+  <title>Registro - Feria de Viajes</title> <!-- Titulo que se muestra en la pestana del navegador -->
 
-  <!-- 🔹 Enlace a la hoja de estilos CSS común a todo el sitio -->
+  <!-- ?? Enlace a la hoja de estilos CSS comun a todo el sitio -->
   <link rel="stylesheet" href="estilos/estilos.css">
 </head>
 
@@ -15,11 +15,11 @@
   <header class="cabecera">
     <!-- Logotipo principal -->
     <img src="imagenes/logo_feria.jpg" alt="Logotipo Feria de Viajes" class="logo-small">
-    <!-- Título de la página -->
+    <!-- Titulo de la pagina -->
     <h1>Registro de asistentes</h1>
   </header>
 
-  <!-- ================= MENÚ DE NAVEGACIÓN ================= -->
+  <!-- ================= MENU DE NAVEGACION ================= -->
   <nav class="menu">
     <!-- Lista con enlaces a todas las secciones del sitio -->
     <ul>
@@ -34,9 +34,9 @@
 
   <!-- ================= CONTENIDO PRINCIPAL ================= -->
   <main class="contenido">
-    <!-- Sección del formulario -->
+    <!-- Seccion del formulario -->
     <section>
-      <h2>Formulario de inscripción</h2>
+      <h2>Formulario de inscripcion</h2>
 
       <!-- FORMULARIO -->
       <!-- El atributo action usa "mailto:" para abrir el cliente de correo del usuario -->
@@ -46,8 +46,8 @@
         <label for="nombre">Nombre completo</label>
         <input type="text" id="nombre" name="Nombre" required>
 
-        <!-- Campo de texto: correo electrónico -->
-        <label for="email">Correo electrónico</label>
+        <!-- Campo de texto: correo electronico -->
+        <label for="email">Correo electronico</label>
         <input type="email" id="email" name="Correo" required>
 
         <!-- Lista desplegable: tipo de entrada -->
@@ -58,20 +58,46 @@
           <option>Profesional</option>
         </select>
 
-        <!-- Conjunto de opciones múltiples -->
+        <!-- Conjunto de opciones multiples -->
         <fieldset>
           <legend>Intereses</legend>
-          <!-- Cada checkbox representa una categoría -->
+          <!-- Cada checkbox representa una categoria -->
           <label><input type="checkbox" name="interes" value="cultura"> Turismo cultural</label>
           <label><input type="checkbox" name="interes" value="aventura"> Turismo de aventura</label>
           <label><input type="checkbox" name="interes" value="playa"> Sol y playa</label>
         </fieldset>
 
-        <!-- Campo de texto de varias líneas para comentarios -->
+        <!-- Campo de texto de varias lineas para comentarios -->
         <label for="comentarios">Comentarios</label>
         <textarea id="comentarios" name="Comentarios" rows="4" cols="240" placeholder="Comentarios"></textarea>
 
-        <!-- Botones de envío y reseteo -->
+        <!-- Botones de envio y reseteo -->
         <div class="botones">
-          <button type="submit">Enviar inscripción</button>
-          <button type="reset
+          <button type="submit">Enviar inscripcion</button>
+          <button type="reset">Limpiar</button>
+        </div>
+      </form>
+
+      <!-- Nota informativa sobre el envio del formulario -->
+      <p>
+        Nota: al pulsar "Enviar inscripcion" se abrira la ventana de correo del sistema con los datos
+        (no se garantiza envio automatico desde el navegador).
+      </p>
+    </section>
+  </main>
+
+   <!-- ================= PIE DE PAGINA ================= -->
+  <footer>
+    <!-- Derechos de autor y enlace a la pagina de contacto -->
+    <p>c 2025 Feria Let`s Travel �X <a href="contacto.html">Contacto</a></p>
+    
+    <!-- Enlace externo al patrocinador -->
+    <p>
+      Patrocinado por:
+      <a href="https://www.birt.eus/" target="_blank" rel="noopener">
+        Viajes BIRTLH
+      </a>
+    </p>
+  </footer>
+</body>
+</html>
